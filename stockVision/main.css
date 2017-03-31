@@ -1,0 +1,27 @@
+#b2 {
+  height: 80vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#b3 {
+  height: 75vh;
+  width: 95vh;
+  margin: 0 auto;
+}
+
+#goog {
+  height: 35vh;
+  width: 50vh;
+}
+
+input {
+  margin-top: 5vh;
+}
+
+button {
+  margin-top: 1vh;
+}
+#chartcontainer {
+  margin-left: 13vw;
+}
