@@ -26,7 +26,7 @@ $(document).ready(() => {
       price3 = today['Time Series (Daily)'][dayCalc.pastDate3Plain]['4. close'] ? parseFloat(today['Time Series (Daily)'][dayCalc.pastDate3Plain]['4. close']) : today['Time Series (Daily)'][dayCalc.pastDate3alt1plain]['4. close'] ? parseFloat(today['Time Series (Daily)'][dayCalc.pastDate3alt1plain]['4. close']) : parseFloat(today['Time Series (Daily)'][dayCalc.pastDate3alt2plain]['4. close']);
       console.log(price3);
     }).done(() => {
-            $.getJSON("http://localhost:8000/api", (adj) => {
+            $.getJSON("/api", (adj) => {
               adjustment = adj.adjustment;
             }).done(() => {
               $('#b3').html(predictPage);
