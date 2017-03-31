@@ -4,7 +4,7 @@ const http = require('http');
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.use(express.static('../StockVision'));
+app.use(express.static('./StockVision'));
 
 let fullMSFT;
 let nowMSFT;
@@ -64,7 +64,7 @@ app.get('/api', (req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('../StockVision/index.html');
+  res.render('./StockVision/index.html');
 })
 
 app.get('/*', (req, res) => {
